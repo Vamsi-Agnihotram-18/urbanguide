@@ -1,0 +1,45 @@
+import React from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+      <h1><i class="fa-solid fa-city"></i> Urban Guide</h1>
+      </header>
+      <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#products">Products/Services</a> |
+        <a href="#news">News</a> |
+        <a href="#contact">Contacts</a>
+      </nav>
+      <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to UrbanGuide, your guide to the urban lifestyle!</p>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>UrbanGuide is a platform aimed at providing comprehensive guides, reviews, and directories for urban living. From finding local businesses to discovering new services, UrbanGuide is your essential companion in navigating the city's vast offerings. It serves as a bridge connecting residents with the best local professionals, eateries, and entertainment venues. Whether you're new to the city or a longtime resident, UrbanGuide offers insights and information to enhance your urban experience. Our platform is dedicated to helping you make informed decisions by offering trusted reviews and user-generated content. With UrbanGuide, explore the hidden gems of your city, stay updated on the latest urban trends, and connect with a community of like-minded urban explorers..</p>
+      </section>
+      <section id="products">
+        <h2>Products/Services</h2>
+        <ul>
+          <li>Local Business Listings</li>
+          <li>Event Organizing Services</li>
+          <li>Professional Service Recommendations</li>
+        </ul>
+      </section>
+      <section id="news">
+        <h2>News</h2>
+        <marquee>Stay tuned for the latest updates and news about our services and offerings!</marquee>
+      </section>
+      <section id="contact">
+        <h2>Contacts</h2>
+        <p>Ph: +1 6685779106</p>
+      </section>
+    </div>
+  );
+}
+
+export default App;

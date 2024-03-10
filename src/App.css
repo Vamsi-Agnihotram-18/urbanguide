@@ -1,0 +1,80 @@
+.App {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 1100px; /* Adjust this value based on your design preference */
+}
+
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+nav {
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+/* Define the hover animation */
+nav a:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.1); /* Scale up on hover */
+  transition: all 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+#news marquee {
+  display: block;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300%; /* Enough for 3 images */
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 300px; /* Adjust based on your needs */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add automatic animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(0); }
+  33.33% { transform: translateX(-100%); }
+  66% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
+
+.carousel-inner {
+  animation: slide 9s infinite;
+}
+
